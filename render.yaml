@@ -6,7 +6,10 @@ services:
     healthCheckPath: /health
     envVars:
       - key: PORT
-        value: "8080"
+        value: "18789"
+
+      - key: NODE_OPTIONS
+        value: --max-old-space-size=512
 
       - key: SETUP_PASSWORD
         sync: false
