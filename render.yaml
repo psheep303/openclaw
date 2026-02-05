@@ -5,9 +5,6 @@ services:
     plan: free
     healthCheckPath: /health
     envVars:
-      - key: PORT
-        value: "18789"
-
       - key: NODE_OPTIONS
         value: --max-old-space-size=512
 
